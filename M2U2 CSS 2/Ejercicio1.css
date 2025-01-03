@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 420px;
+    height: 420px;
+    border: 1px solid black;
+}
+
+.box {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
