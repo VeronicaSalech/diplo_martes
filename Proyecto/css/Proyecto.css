@@ -1,0 +1,175 @@
+/* font-family: "Open Sans", serif; */
+
+body {
+  font-family: "Open Sans", serif;
+  font-size: 18px; /* Reducir para mejor legibilidad */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Para darle un fondo más amigable */
+}
+header {
+  background-color: rgb(151, 163, 121);
+  padding: 5px 0;
+}
+header h1 {
+  color: rgb(83, 83, 83);
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+nav {
+  background-color: darkgray;
+  font-family: "Open Sans", serif;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centra los elementos en el menú */
+  align-items: center;
+  gap: 15px;
+}
+
+nav ul li {
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 3px 6px;
+  display: block;
+  text-align: center;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+nav ul li a.activo {
+  background-color: rgb(
+    110,
+    110,
+    110
+  ); /* Color de fondo para la página activa */
+  color: white; /* Hace que el color del texto se mantenga */
+  font-weight: 600; /* Opcional: resaltar la página activa */
+}
+
+header img {
+  margin-left: 0;
+  top: 12px;
+  position: static;
+}
+
+nav ul li a:hover {
+  color: white;
+  font-weight: 500;
+}
+
+footer {
+  background-color: rgb(120, 138, 89);
+  clear: both;
+  color: black;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 0;
+}
+
+.holder {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header .holder {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: center; /* Asegura que el logo y el título estén alineados a la izquierda */
+  gap: 15px; /* Agrega un pequeño espacio entre la imagen y el texto */
+}
+
+h2 {
+  color: rgb(49, 49, 49);
+  font-weight: 500;
+}
+
+/* Home */
+.bienvenidos {
+  width: 50%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.bienvenidos p {
+  color: rgb(83, 83, 83);
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.mision {
+  width: 50%;
+}
+
+.mision p {
+  color: rgb(83, 83, 83);
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.homeimg {
+  width: 100%; /* Se mantiene el ancho completo del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+  max-height: 250px;
+}
+
+.homeimg img {
+  width: 100%; /* Se ajusta al ancho del contenedor */
+  max-width: 960px; /* Se mantiene dentro del ancho del contenido */
+  height: 200px; /* Ajusta la altura deseada */
+  object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .columnas {
+    flex-direction: column;
+  }
+
+  .bienvenidos {
+    width: 100%;
+    flex: 1; /* Permite que ambas secciones ocupen el mismo espacio proporcionalmente */
+    min-width: 45%;
+  }
+
+  .mision {
+    width: 100%;
+    flex: 1; /* Permite que ambas secciones ocupen el mismo espacio proporcionalmente */
+    min-width: 45%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 5px 0;
+  }
+}
+
+/* Fin Home */
