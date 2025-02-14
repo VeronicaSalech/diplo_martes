@@ -139,7 +139,7 @@ h2 {
 .homeimg img {
   width: 100%; /* Se ajusta al ancho del contenedor */
   max-width: 960px; /* Se mantiene dentro del ancho del contenido */
-  height: 200px; /* Ajusta la altura deseada */
+  height: 200px; 
   object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
   object-position: center;
   display: block;
