@@ -139,7 +139,7 @@ h2 {
 .homeimg img {
   width: 100%; /* Se ajusta al ancho del contenedor */
   max-width: 960px; /* Se mantiene dentro del ancho del contenido */
-  height: 200px; 
+  height: 200px;
   object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
   object-position: center;
   display: block;
@@ -173,3 +173,93 @@ h2 {
 }
 
 /* Fin Home */
+
+/* Inicio Nosotros */
+
+.historia p {
+  color: rgb(83, 83, 83);
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.personas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.persona {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 18%;
+  text-align: center;
+  padding: 13px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.persona img {
+  border-radius: 50%;
+  max-width: 60%;
+  box-shadow: 0 0 5px rgb(120, 138, 89);
+}
+
+.persona h5,
+.persona h6 {
+  margin: 0;
+  color: rgb(120, 138, 89);
+}
+
+.persona h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.persona h6 {
+  font-size: 11px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.persona p {
+  color: rgb(199, 194, 194);
+  font-size: 12px;
+}
+
+.deporte {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.deporte .info p {
+  font-size: 13px;
+  color: rgb(83, 83, 83);
+  line-height: 19px;
+}
+
+.deporte img {
+  border-radius: 13px;
+  display: block;
+  max-width: 225px;
+}
+
+.deporte .info h4 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgb(120, 138, 89);
+  padding-bottom: 5px; /* Espacio entre el texto y la línea */
+  border-bottom: 1px solid #888; /* Línea delgada */
+  display: inline-block;
+  width: 100%;
+}
+
+.deporte:nth-child(even) {
+  flex-direction: row-reverse;
+}
