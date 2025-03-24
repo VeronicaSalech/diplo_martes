@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio2</title>
+  </head>
+  <body>
+    <script>
+      const numeros = prompt(`Ingresá números:`, ``);
+      let mayor = 0;
+
+      for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] > mayor) {
+          mayor = numeros[i];
+        }
+      }
+      console.log(`El número mayor es: ${mayor}`);
+    </script>
+  </body>
+</html>
